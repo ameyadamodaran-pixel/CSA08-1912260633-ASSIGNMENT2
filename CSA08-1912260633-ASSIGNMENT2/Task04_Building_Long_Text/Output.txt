@@ -1,0 +1,8 @@
+Same output: True
+Output length: 3048890
+Repeated += times: [0.02241, 0.021697, 0.020458]
+join times: [0.003256, 0.003646, 0.001992]
+f-string/list times: [0.015978, 0.012176, 0.01157]
+Average +=: 0.021522 seconds
+Average join: 0.002964 seconds
+Average f-string/list: 0.013241 seconds

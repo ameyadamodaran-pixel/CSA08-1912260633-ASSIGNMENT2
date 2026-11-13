@@ -1,0 +1,8 @@
+Original vs redesigned solution
+n=20: same_result=True, original_calls=21891, new_iterations=19, original_time=0.001254s, redesigned_time=0.000003s
+n=25: same_result=True, original_calls=242785, new_iterations=24, original_time=0.015734s, redesigned_time=0.000010s
+n=30: same_result=True, original_calls=2692537, new_iterations=29, original_time=0.168485s, redesigned_time=0.000012s
+
+Diagnosis: naive recursion recalculates the same smaller step counts.
+Objective: preserve the result while reducing work to a linear number of iterations.
+Trade-off: the loop uses two stored values and avoids recursive stack growth.

@@ -1,0 +1,12 @@
+ID  Units  Ration  Age>80  Separate-if result             Correct result
+H1  100    False   False   FULL SUBSIDY                   FULL SUBSIDY
+H2  101    True    False   PARTIAL SUBSIDY                PARTIAL SUBSIDY
+H3  200    True    False   PARTIAL SUBSIDY                PARTIAL SUBSIDY
+H4  201    False   True    SPECIAL SUBSIDY                SPECIAL SUBSIDY
+H5  150    False   False   NO SUBSIDY                     NO SUBSIDY
+H6  250    False   False   NO SUBSIDY                     NO SUBSIDY
+H7  80     True    False   FULL SUBSIDY, PARTIAL SUBSIDY  FULL SUBSIDY
+H8  220    True    False   NO SUBSIDY                     NO SUBSIDY
+
+Design decision: if-elif-else is preferred because only one subsidy decision
+should be returned. Chained comparison 101 <= units <= 200 is readable.

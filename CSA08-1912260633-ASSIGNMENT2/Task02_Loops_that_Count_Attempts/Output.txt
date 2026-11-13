@@ -1,0 +1,14 @@
+WHILE LOOP DEMO
+Blank entry: not counted.
+Wrong OTP. Attempts used: 1
+Wrong OTP. Attempts used: 2
+OTP verified.
+
+FOR LOOP DEMO (three wrong entries)
+Wrong OTP. Attempts used: 1
+Wrong OTP. Attempts used: 2
+Wrong OTP. Attempts used: 3
+Account locked for 30 minutes.
+
+CHANGED CONDITION: security question verified, five attempts
+Account locked for 30 minutes.

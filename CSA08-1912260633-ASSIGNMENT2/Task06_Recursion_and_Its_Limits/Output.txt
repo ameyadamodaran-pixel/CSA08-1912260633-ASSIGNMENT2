@@ -1,0 +1,18 @@
+Correctness for n=1..6
+1 1
+2 2
+3 3
+4 5
+5 8
+6 13
+
+Call-count growth
+n=10: value=89, naive_calls=177, memo_value=89, memo_calls=11
+n=20: value=10946, naive_calls=21891, memo_value=10946, memo_calls=21
+n=25: value=121393, naive_calls=242785, memo_value=121393, memo_calls=26
+n=30: value=1346269, naive_calls=2692537, memo_value=1346269, memo_calls=31
+
+Iterative result for n=1000 has 209 digits
+Memoised recursion at n=1000: RecursionError
+Recursion limit: 1000
+Reason: memoisation avoids repeated work, but recursive calls still use stack frames.
